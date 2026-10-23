@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="SkillHub">
+  <defs>
+    <linearGradient id="skillhub-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f6ef7"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#skillhub-bg)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 48 64 30l32 18v36L64 102 32 84V48Z"/>
+    <path d="M32 48 64 66l32-18M64 66v36"/>
+  </g>
+  <circle cx="99" cy="30" r="9" fill="#ffffff"/>
+</svg>

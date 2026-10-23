@@ -1,0 +1,4 @@
+# dsh bundle patch: inserts the Seeyon workbench (OA + skillhub + VPN) into a profile.
+- insert:
+    - id: seeyon-workbench
+      name: dsh-seeyon-workbench

@@ -1,0 +1,33 @@
+{
+  "name": "@local/dsh-seeyon-todo",
+  "version": "1.7.2",
+  "private": true,
+  "description": "致远 OA 待办台：在 DeepSeek Harness 内按优先级查看待办，点开即在右侧打开表单，并向表单注入「一键填入 / 意见代填」助手。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "inject.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "docs/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

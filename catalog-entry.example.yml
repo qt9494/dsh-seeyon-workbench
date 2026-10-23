@@ -1,0 +1,8 @@
+# 提交到 awesome-dsh-plugin / dshmarket 的条目模板
+# 用法：把本文件复制成 data/plugins/<owner>__<repo>.yml 提 PR（只加这一个文件）
+url: https://github.com/OWNER/dsh-seeyon-workbench
+name: OWNER/dsh-seeyon-workbench
+category: ui
+description:
+  en: Seeyon workbench that mounts OA to-dos and meetings, the skill catalog, and one-click VPN in a single panel.
+  zh: 致远工作台：把 OA 待办、会议、技能市场和 VPN 一键登录合成一个面板。

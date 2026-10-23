@@ -1,0 +1,41 @@
+{
+  "name": "dsh-seeyon-workbench",
+  "version": "0.1.0",
+  "description": "Seeyon workbench for DeepSeek Harness: OA to-dos and meetings, the skill catalog, and one-click aTrust VPN in a single panel.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "vendor/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "seeyon",
+    "oa",
+    "vpn"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qt9494/dsh-seeyon-workbench.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
