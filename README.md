@@ -55,6 +55,13 @@ VPN 密码用 Windows DPAPI 加密后存 `~/.dsh/vpn/config.json`，只有当前
 | VPN 登录页白屏 | webview 不能放进带 filter/transform/滚动裁剪的容器，VPN 视图固定 `overflow:hidden` |
 | VPN 已连但显示未连接 | 探针必须是 `host:port`，脏值会让判定失败 |
 
+## 来源与许可
+
+`vendor/` 下三份代码（OA 待办台、SkillHub 面板、aTrust VPN）均为本项目作者自研，此前未单独公开发布，
+未包含任何第三方代码，随本仓库以 MIT 分发。逐项说明见 [`vendor/SOURCES.md`](vendor/SOURCES.md)。
+
+> 这三块实现与独立安装的同名插件**二选一，不可同装** —— Host 半会注册同一批路由，重复安装会冲突。
+
 ## 许可
 
 MIT（见 LICENSE）。`vendor/` 下为三个相关插件的代码拷贝，随本仓库一同以 MIT 分发前请确认你拥有其版权。
