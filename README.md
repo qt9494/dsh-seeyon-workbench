@@ -64,4 +64,8 @@ VPN 密码用 Windows DPAPI 加密后存 `~/.dsh/vpn/config.json`，只有当前
 
 ## 许可
 
-MIT（见 LICENSE）。`vendor/` 下为三个相关插件的代码拷贝，随本仓库一同以 MIT 分发前请确认你拥有其版权。
+本项目以 **MIT** 发布，完整条款见 [LICENSE](LICENSE)。
+
+`vendor/` 下的三份代码（OA 待办台、SkillHub 面板、aTrust VPN）均为本项目作者自研，以同一 MIT 条款随本仓库分发；
+其中 `vendor/dsh-skillhub/vendor/fflate.mjs` 为第三方库 [fflate](https://github.com/101arrowz/fflate)（MIT，© 2023 Arjun Barrett），
+许可原文见同目录 `fflate-LICENSE`。逐项说明见 [`vendor/SOURCES.md`](vendor/SOURCES.md)。
