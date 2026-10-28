@@ -431,7 +431,7 @@ async function fetchTodos(config, options = {}) {
   let total = null
   for (let page = 1; page <= maxPages; page += 1) {
     const raw = await callTool(config, T_AFFAIR_LIST, {
-      baseParam: { state: 3, pageNo: page, pageSize },
+      baseParam: { state: '3', pageNo: page, pageSize },
     })
     const data = unwrap(raw)
     const rows = pickRows(data)
@@ -539,7 +539,7 @@ function parseWorklogText(formText) {
 async function collectWeekly(config, start, end) {
   const logs = []
   for (let page = 1; page <= 3; page += 1) {
-    const raw = await callTool(config, T_AFFAIR_LIST, { baseParam: { state: 2, pageNo: page, pageSize: 50 } })
+    const raw = await callTool(config, T_AFFAIR_LIST, { baseParam: { state: '2', pageNo: page, pageSize: 50 } })
     const rows = pickRows(unwrap(raw))
     if (!rows.length) break
     for (const row of rows) {
@@ -840,7 +840,7 @@ function extractLabel(text, label, stopLabels) {
 export async function previewProjectReport(config) {
   let report = null
   for (let page = 1; page <= 3 && !report; page += 1) {
-    const raw = await callTool(config, T_AFFAIR_LIST, { baseParam: { state: 2, pageNo: page, pageSize: 50 } })
+    const raw = await callTool(config, T_AFFAIR_LIST, { baseParam: { state: '2', pageNo: page, pageSize: 50 } })
     const rows = pickRows(unwrap(raw))
     if (!rows.length) break
     report = rows.find((row) => String(row.subject || '').includes('项目周报')) || null
@@ -864,7 +864,7 @@ export async function previewProjectReport(config) {
 
   const others = []
   for (let page = 1; page <= 3; page += 1) {
-    const raw = await callTool(config, T_AFFAIR_LIST, { baseParam: { state: 3, pageNo: page, pageSize: 50 } })
+    const raw = await callTool(config, T_AFFAIR_LIST, { baseParam: { state: '3', pageNo: page, pageSize: 50 } })
     const rows = pickRows(unwrap(raw))
     if (!rows.length) break
     for (const row of rows) {

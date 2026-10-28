@@ -1,6 +1,6 @@
 {
   "name": "dsh-seeyon-workbench",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Seeyon workbench for DeepSeek Harness: OA to-dos and meetings, the skill catalog, and one-click aTrust VPN in a single panel.",
   "type": "module",
   "main": "index.js",
